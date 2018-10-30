@@ -7,33 +7,34 @@
 </head>
 <body>
   <div class="row">
-    <div tabindex="0" class="col-md-10 col-md-offset-1">
-      <h1>Ejercicio - Lector de Pantalla</h1>
+    <div tabindex="-1" class="col-md-10 col-md-offset-1">
+      <h1 tabindex="0">Ejercicio - Lector de Pantalla</h1>
 
-      <img  alt= "La imagen puede incluir: Panda rojo, exterior" src="./img/image.jpeg" />
+      <img tabindex="0" alt= "La imagen puede incluir: Panda rojo, exterior" src="./img/image.jpeg" />
 
-      <h2 >¡Inscríbete en nuestra lista de correo!</h2>
+      <h2 tabindex="0">¡Inscríbete en nuestra lista de correo!</h2>
 
       <form  style="margin-bottom: 150px;">
-        <p><label for = "mail">Dirección de email:</label></p>
+
+        <p><label for = "mail" >Dirección de email:</label></p>
         <input id="mail" class="form-control" type="email" />
 
-        <p><label for = "nombre">Nombre completo:</label></p>
-        <input id="nombre" class="form-control" type="text" />
+        <p><label for="nombre"> Nombre completo:</label></p>
+        <input  class="form-control" type="text" id="nombre"/>
 
-        <p><label for = "frecuencia">¿Con qué frecuencia desea recibir nuestros correos?</p>
+        <p><label for="frecuencia">¿Con qué frecuencia desea recibir nuestros correos?</p>
         <select id="frecuencia" class="form-control">
           <option value="1">Diariamente</option>
           <option value="2">Semanalmente</option>
           <option value="3">Mensualmente</option>
           <option value="4">Nunca</option>
-          
+
         </select>
 
-        <p><label for = "pregunta">Pregunta de seguridad: ¿Qué hay en la imagen superior?</label></p>
+        <p><label for="pregunta">Pregunta de seguridad: ¿Qué hay en la imagen superior?</label></p>
         <input id= "pregunta" class="form-control" type="text" />
-<input type="submit" name="submit" value="Cancelar" />
-<input type="submit" name="submit" value="Enviar formulario" />
+        <input type="submit" name="submit" value="Cancelar" />
+        <input type="submit" name="submit2" value="Enviar" />
 
       </form>
 
